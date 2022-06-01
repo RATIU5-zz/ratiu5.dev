@@ -1,7 +1,7 @@
 import type { EntryContext } from "@remix-run/deno";
-import { RemixServer } from "https://esm.sh/@remix-run/react@1.5.1";
-import * as React from "https://esm.sh/react@18.1.0";
-import { renderToString } from "https://esm.sh/react-dom@18.1.0/server";
+import { RemixServer } from "@remix-run/react";
+import * as React from "react";
+import { renderToString } from "react-dom/server";
 
 export default function handleRequest(
 	request: Request,
