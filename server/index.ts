@@ -1,6 +1,6 @@
 import { serve } from "https://deno.land/std@0.141.0/http/server.ts";
 import { createRequestHandlerWithStaticFiles } from "@remix-run/deno";
-import * as build from "https://esm.sh/@remix-run/dev@1.5.1/server-build";
+import * as build from "@remix-run/dev/server-build";
 
 const remixHandler = createRequestHandlerWithStaticFiles({
 	build,
