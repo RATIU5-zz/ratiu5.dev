@@ -2,5 +2,6 @@
 	"deno.enable": true,
 	"deno.lint": true,
 	"deno.importMap": "./.vscode/resolve_npm_imports.json",
-	"deno.unstable": true
+	"deno.unstable": true,
+	"deno.config": "tsconfig.json"
 }
