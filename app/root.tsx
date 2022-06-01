@@ -1,13 +1,6 @@
 import type { MetaFunction } from "@remix-run/deno";
-import * as React from "https://esm.sh/react@18.1.0";
-import {
-	Links,
-	LiveReload,
-	Meta,
-	Outlet,
-	Scripts,
-	ScrollRestoration,
-} from "https://esm.sh/@remix-run/react@1.5.1";
+import * as React from "react";
+import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
 
 export const meta: MetaFunction = () => ({
 	charset: "utf-8",
