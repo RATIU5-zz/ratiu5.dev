@@ -1,6 +1,13 @@
 import type { MetaFunction } from "@remix-run/deno";
 import * as React from "react";
-import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
+import {
+	Links,
+	LiveReload,
+	Meta,
+	Outlet,
+	Scripts,
+	ScrollRestoration,
+} from "@remix-run/react";
 
 export const meta: MetaFunction = () => ({
 	charset: "utf-8",
@@ -19,7 +26,13 @@ export default function App() {
 	);
 }
 
-function Document({ children, title }: { children: React.ReactNode; title?: string }) {
+function Document({
+	children,
+	title,
+}: {
+	children: React.ReactNode;
+	title?: string;
+}) {
 	return (
 		<html lang="en">
 			<head>

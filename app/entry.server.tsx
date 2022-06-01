@@ -7,9 +7,11 @@ export default function handleRequest(
 	request: Request,
 	responseStatusCode: number,
 	responseHeaders: Headers,
-	remixContext: typeof EntryContext,
+	remixContext: typeof EntryContext
 ) {
-	const markup = renderToString(<RemixServer context={remixContext} url={request.url} />);
+	const markup = renderToString(
+		<RemixServer context={remixContext} url={request.url} />
+	);
 
 	responseHeaders.set("Content-Type", "text/html");
 

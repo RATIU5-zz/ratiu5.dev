@@ -8,17 +8,17 @@ This site is in active development
 
 Front-end tools
 
--   React
--   ReachUI
--   Tailwind CSS
--   postCSS
--   autoprefixer
+- React
+- ReachUI
+- Tailwind CSS
+- postCSS
+- autoprefixer
 
 Back-end tools
 
--   Remix
+- Remix
 
 JavaScript
 
--   TypeScript
--   Deno
+- TypeScript
+- Deno
