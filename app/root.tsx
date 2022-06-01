@@ -11,17 +11,41 @@ export const meta: MetaFunction = () => ({
 
 export default function App() {
 	return (
+		<Document>
+			<Layout>
+				<Outlet />
+			</Layout>
+		</Document>
+	);
+}
+
+function Document({ children, title }: { children: React.ReactNode; title?: string }) {
+	return (
 		<html lang="en">
 			<head>
+				<title>{title || "RATIU5.dev"}</title>
 				<Meta />
 				<Links />
 			</head>
 			<body>
-				<Outlet />
+				{children}
 				<ScrollRestoration />
 				<Scripts />
 				<LiveReload />
 			</body>
 		</html>
+	);
+}
+
+function Layout({ children }: { children: React.ReactNode }) {
+	return (
+		<>
+			<header>Header</header>
+			<main>
+				Content
+				{children}
+			</main>
+			<footer>Footer</footer>
+		</>
 	);
 }
