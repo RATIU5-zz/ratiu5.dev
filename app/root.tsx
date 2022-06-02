@@ -54,10 +54,7 @@ function Layout({ children }: { children: React.ReactNode }) {
 	return (
 		<>
 			<header>Header</header>
-			<main>
-				Content
-				{children}
-			</main>
+			<main>{children}</main>
 			<footer>Footer</footer>
 		</>
 	);
