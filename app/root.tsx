@@ -8,6 +8,7 @@ import {
 	Scripts,
 	ScrollRestoration,
 } from "@remix-run/react";
+import Navbar from "./components/navbar/navbar.tsx";
 
 export const meta: MetaFunction = () => ({
 	charset: "utf-8",
@@ -53,7 +54,9 @@ function Document({
 function Layout({ children }: { children: React.ReactNode }) {
 	return (
 		<>
-			<header>Header</header>
+			<header>
+				<Navbar />
+			</header>
 			<main>{children}</main>
 			<footer>Footer</footer>
 		</>
