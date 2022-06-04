@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@remix-run/deno";
+import type { LinksFunction, MetaFunction } from "@remix-run/deno";
 import * as React from "react";
 import {
 	Links,
@@ -10,6 +10,7 @@ import {
 } from "@remix-run/react";
 import Navbar from "./components/navbar/navbar.tsx";
 import Footer from "./components/footer/footer.tsx";
+import styles from "./styles/app.css";
 
 export const meta: MetaFunction = () => ({
 	charset: "utf-8",
@@ -17,6 +18,8 @@ export const meta: MetaFunction = () => ({
 	viewport: "width=device-width, initial-scale=1",
 	description: "RATIU5.dev - My personal website",
 });
+
+export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
 
 export default function App() {
 	return (
