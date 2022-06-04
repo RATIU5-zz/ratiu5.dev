@@ -9,7 +9,7 @@ export default function BlogPage() {
 					<div>
 						<ul>
 							<li>
-								<a href="#">
+								<a href="/blog/post1">
 									<div>
 										<div>
 											<img src="post-image.png" alt="post image alt text" />
@@ -29,7 +29,7 @@ export default function BlogPage() {
 								</a>
 							</li>
 							<li>
-								<a href="#">
+								<a href="/blog/post2">
 									<div>
 										<div>
 											<img src="post-image.png" alt="post image alt text" />
@@ -53,5 +53,14 @@ export default function BlogPage() {
 				</div>
 			</section>
 		</article>
+	);
+}
+
+export function ErrorBoundary({ error }: { error: Error }) {
+	return (
+		<div>
+			<h1>Oh no!</h1>
+			<p>{error.message}</p>
+		</div>
 	);
 }

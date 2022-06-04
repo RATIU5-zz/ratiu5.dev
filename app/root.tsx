@@ -31,6 +31,16 @@ export default function App() {
 	);
 }
 
+export function ErrorBoundary({ error }: { error: Error }) {
+	console.error(error);
+	return (
+		<Document>
+			<h2>Oh no!</h2>
+			<p>{error.message}</p>
+		</Document>
+	);
+}
+
 function Document({
 	children,
 	title,

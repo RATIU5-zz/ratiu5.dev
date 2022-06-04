@@ -22,3 +22,12 @@ export default function PostPage() {
 		</article>
 	);
 }
+
+export function ErrorBoundary({ error }: { error: Error }) {
+	return (
+		<div>
+			<h1>Oh no!</h1>
+			<p>{error.message}</p>
+		</div>
+	);
+}
